@@ -475,6 +475,12 @@ span {
   list-style: none;
 }
 
+.burger-contacts {
+  font-size: 18px;
+  color: red;
+  text-decoration: none;
+}
+
 .offcanvas-button {
   display: block;
   width: 30px;
@@ -537,6 +543,10 @@ span {
   color: #fff;
   text-decoration: none;
   font-size: 24px;
+}
+
+.offcanvas-link:hover {
+  background: #b55855;
 }
 
 .offcanvas-control {
