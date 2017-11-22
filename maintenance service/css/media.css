@@ -1,0 +1,25 @@
+@media only screen and (max-width: 768px){
+        .main-title {
+            font-size: 24px;
+        }
+        .main-description {
+            font-size: 18px;
+        }
+
+        .serv-title {
+            font-size: 20px;
+        }
+
+        .serv-item-img img {
+            border-radius: 0
+        }
+
+}
+
+
+@media screen and (max-width: 500px) {
+    .up-button {
+        padding: 20px 10px;
+        opacity: 0.6;
+    }
+}
