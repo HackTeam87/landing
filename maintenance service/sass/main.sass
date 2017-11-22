@@ -1,5 +1,9 @@
 //@import "progect.sass"
 
+
+//all
+
+
 @import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed')
 
 *
@@ -17,6 +21,9 @@ body
   height: 100%
   margin: 0 auto
 
+.container
+  margin-top: 10px
+
 .row
   margin: 0
 
@@ -27,6 +34,10 @@ a,a:hover,a:focus
 
 h1,h2,h3,h4,h5,h6
   color: #3c3c3c
+
+
+//flex-base-1.header-2.content-3.footer
+
 
 .wrap-site
   background-color: #ffffff
@@ -40,7 +51,7 @@ h1,h2,h3,h4,h5,h6
   flex-flow: column nowrap
   justify-content: flex-start
   align-items: stretch
-  align-content: stretch
+  align-content: stretch 
 
 .site-header
   flex: 0 1 auto
@@ -52,6 +63,7 @@ h1,h2,h3,h4,h5,h6
   flex: 1 1 auto
   padding: 0 0 30px
 
+// header
 
 .site-header .navbar-text
   color: #eee
@@ -60,6 +72,8 @@ h1,h2,h3,h4,h5,h6
 
 .site-header .navbar
   margin: 0
+
+//footer
 
 .site-footer
   background: #333 url("../img/bg/bg-footer.png")repeat scroll center center
@@ -71,12 +85,19 @@ h1,h2,h3,h4,h5,h6
   font-size: 12px
   font-style: italic
 
+//btn
+
 .wrap-btn
   margin-top: 20px
   text-align: center
 
 .btn:focus
   outline: none
+
+
+
+
+//overlay
 
 .overlay
   background-color: rgba(0,0,0,0.8)
@@ -87,6 +108,15 @@ h1,h2,h3,h4,h5,h6
   top: 0
   z-index: 1
 
+//section
+
+
+section
+  position: relative
+  padding: 30px 0
+
+
+
 .main-section
   background: #fff url("../img/bg/bg1.jpg") no-repeat scroll center center
   -webkit-background-size: cover
@@ -94,9 +124,8 @@ h1,h2,h3,h4,h5,h6
   height: 700px
   box-shadow: 0 2px 5px rgba(0,0,0,0.3)
 
-section
-  position: relative
-  padding: 30px 0
+
+
 
 
 .wrap-main
@@ -153,8 +182,7 @@ section
 .serv-item-description p
   margin: 0
 
-//.client-img
-//  margin: 20px auto
+
 
 .client-img img
   display: block
@@ -206,16 +234,52 @@ section
   text-transform: uppercase
   margin: 0 auto 20px
 
-.container
-  margin-top: 10px
 
-//.site-content
-//  padding: 30px 0
-//
-//.page-main
-//  padding: 30px 0
+.page-content img
+  display: block
+  margin: 20px auto
+  max-width: 600px
+  max-height: 400px
+  width: 100%
+  height: auto
 
-//---Scroll---
+//sidebar
+
+.wrap-sidebar
+  text-align: center
+  margin: 50px auto 0
+  padding: 20px 10px
+  border: 2px solid #249648
+  width: 215px
+  border-radius: 3px
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3)
+  position: fixed
+
+.sidebar-header
+  display: inline-block
+  background-color: coral
+  padding: 5px 10px
+  border-radius: 3px
+
+.sidebar-title
+  color: #eee
+  margin: 0
+
+.sidebar-item-title
+  margin: 20px auto 0
+
+.sidebar-item-title a
+  font-family: "Roboto Condensed"
+  color: #A3B3DF
+  font-size: 16px
+  border-bottom: 1px dashed #3c3c3c
+  transition: all 0.8s
+
+.sidebar-item-title a:hover
+  color: #FF7F67
+
+
+//---Scroll---btn-
 
 .up-button
   display: none
@@ -225,7 +289,7 @@ section
   background-color: #d8d8d8
   color: #fff
   cursor: pointer
-  padding: 16px 8px
+  padding: 14px 6px
   z-index: 99
   border-radius: 10px
   border: none
@@ -235,5 +299,7 @@ section
   background-color: #b71810
 
 .fa-arrow-up
-  font-size: 35px
+  font-size: 20px
+
+
 

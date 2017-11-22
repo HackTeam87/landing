@@ -17,12 +17,17 @@ body {
   margin: 0 auto;
 }
 
+.container {
+  margin-top: 10px;
+}
+
 .row {
   margin: 0;
 }
 
 a, a:hover, a:focus {
   text-decoration: none;
+  -webkit-text-decoration-color: #333;
   text-decoration-color: #333;
   text-decoration-outline: none;
 }
@@ -33,28 +38,45 @@ h1, h2, h3, h4, h5, h6 {
 
 .wrap-site {
   background-color: #ffffff;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   min-height: 100%;
   max-width: 1680px;
   min-width: 320px;
   margin: 0 auto;
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column nowrap;
   flex-flow: column nowrap;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
   justify-content: flex-start;
+  -webkit-box-align: stretch;
+  -ms-flex-align: stretch;
   align-items: stretch;
+  -ms-flex-line-pack: stretch;
   align-content: stretch;
 }
 
 .site-header {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 auto;
   flex: 0 1 auto;
 }
 
 .site-footer {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 auto;
   flex: 0 1 auto;
 }
 
 .site-content {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   padding: 0 0 30px;
 }
@@ -99,17 +121,17 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 1;
 }
 
-.main-section {
-  background: #fff url("../img/bg/bg1.jpg") no-repeat scroll center center;
-  -webkit-background-size: cover;
-  background-size: cover;
-  height: 700px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-}
-
 section {
   position: relative;
   padding: 30px 0;
+}
+
+.main-section {
+  background: #fff url("../img/bg/bg1.jpg") no-repeat scroll center center;
+  background-size: cover;
+  height: 700px;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .wrap-main {
@@ -117,10 +139,20 @@ section {
   position: relative;
   z-index: 2;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column nowrap;
   flex-flow: column nowrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -ms-flex-line-pack: stretch;
   align-content: stretch;
 }
 
@@ -154,6 +186,7 @@ section {
   min-height: 200px;
   width: 100%;
   height: auto;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   border-radius: 50%;
 }
@@ -172,10 +205,11 @@ section {
 .client-img img {
   display: block;
   margin: 20px auto;
-  min-width: 320px;
+  min-width: 280px;
   min-height: 200px;
   width: 100%;
   height: auto;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 }
 
@@ -225,8 +259,55 @@ section {
   margin: 0 auto 20px;
 }
 
-.container {
-  margin-top: 10px;
+.page-content img {
+  display: block;
+  margin: 20px auto;
+  max-width: 600px;
+  max-height: 400px;
+  width: 100%;
+  height: auto;
+}
+
+.wrap-sidebar {
+  text-align: center;
+  margin: 50px auto 0;
+  padding: 20px 10px;
+  border: 2px solid #249648;
+  width: 215px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  position: fixed;
+}
+
+.sidebar-header {
+  display: inline-block;
+  background-color: coral;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+.sidebar-title {
+  color: #eee;
+  margin: 0;
+}
+
+.sidebar-item-title {
+  margin: 20px auto 0;
+}
+
+.sidebar-item-title a {
+  font-family: "Roboto Condensed";
+  color: #A3B3DF;
+  font-size: 16px;
+  border-bottom: 1px dashed #3c3c3c;
+  -webkit-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.sidebar-item-title a:hover {
+  color: #FF7F67;
 }
 
 .up-button {
@@ -237,7 +318,7 @@ section {
   background-color: #d8d8d8;
   color: #fff;
   cursor: pointer;
-  padding: 16px 8px;
+  padding: 14px 6px;
   z-index: 99;
   border-radius: 10px;
   border: none;
@@ -249,5 +330,5 @@ section {
 }
 
 .fa-arrow-up {
-  font-size: 35px;
+  font-size: 20px;
 }
